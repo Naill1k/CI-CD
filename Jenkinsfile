@@ -1,18 +1,18 @@
 pipeline {
   environment {
-    calculator_image = 'yxos/calculator'
+    calculator_image = 'alinot/calculator'
     
-    sum_image = 'yxos/sum'
-    sub_image = 'yxos/sub'
-    mul_image = 'yxos/mul'
-    div_image = 'yxos/div'
-    sum_link = 'https://github.com/AnonymousWhizzer/Sum_service.git'
-    sub_link = 'https://github.com/AnonymousWhizzer/Sub_service.git'
-    mul_link = 'https://github.com/AnonymousWhizzer/Mul_service.git'
-    div_link = 'https://github.com/AnonymousWhizzer/Div_service.git'
-    calculator_link = 'https://github.com/AnonymousWhizzer/Calculator_service.git'
+    sum_image = 'alinot/sum'
+    sub_image = 'alinot/sub'
+    mul_image = 'alinot/mul'
+    div_image = 'alinot/div'
+    sum_link = 'https://github.com/Naill1k/Sum_service.git'
+    sub_link = 'https://github.com/Naill1k/Sub_service.git'
+    mul_link = 'https://github.com/Naill1k/Mul_service.git'
+    div_link = 'https://github.com/Naill1k/Div_service.git'
+    calculator_link = 'https://github.com/Naill1k/Calculator_service.git'
     dockerImage = ""
-    registryCredential = 'repo_login'
+    registryCredential = '260e26a3-fe45-4b42-8667-b9768a1968ec'
   
     //provide this line with one of your worker floating IP
     build_arg="--build-arg HIS_IP='<worker_floating_ip>' ."
