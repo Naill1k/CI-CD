@@ -15,7 +15,7 @@ pipeline {
     registryCredential = '260e26a3-fe45-4b42-8667-b9768a1968ec'
   
     //provide this line with one of your worker floating IP
-    build_arg="--build-arg HIS_IP='<worker_floating_ip>' ."
+    build_arg="--build-arg HIS_IP='192.168.37.130' ."
   }
 
   agent any
